@@ -13,6 +13,8 @@ To run the simulator, you just do the usual:
 
 ```sh
 prompt> ./ssd.py
+# if you are using ubuntu or mac
+prompt$ python3 ssd.py
 ```
 
 The simulator models a few different types of SSDs. The first is what we'll
@@ -21,6 +23,8 @@ perfect memory. To simulate this SSD, type:
 
 ```sh
 prompt> ./ssd.py -T ideal
+# if you are using ubuntu or mac
+prompt$ python3 ssd.py -T ideal
 ```
 
 To see how this one works, let's create a little workload. A workload, for an
@@ -36,6 +40,8 @@ consisting of just one write:
 
 ```sh
 prompt> ./ssd.py -T ideal -L w10:a -l 30 -B 3 -p 10
+# if you are using ubuntu or mac
+prompt$ python3 ssd.py -T ideal -L w10:a -l 30 -B 3 -p 10
 ```
 
 The `-L` flag allows us to specify a comma-separated list of commands. Here, to
